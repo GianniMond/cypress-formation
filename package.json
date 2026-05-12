@@ -1,0 +1,29 @@
+{
+  "name": "cypress-formation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GianniMond/cypress-formation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GianniMond/cypress-formation/issues"
+  },
+  "homepage": "https://github.com/GianniMond/cypress-formation#readme",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "cypress": "^15.14.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0"
+  }
+}
