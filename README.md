@@ -54,6 +54,8 @@ npx cypress run
 
 - Exercices: [cypress/e2e/exercice](cypress/e2e/exercice)
 - Corrections: [cypress/e2e/correction](cypress/e2e/correction)
+- Exercices API: [cypress/api/exercice](cypress/api/exercice)
+- Corrections API: [cypress/api/correction](cypress/api/correction)
 - Step definitions (correction): [cypress/step_definitions](cypress/step_definitions)
 - Support Cypress: [cypress/support](cypress/support)
 
@@ -78,4 +80,9 @@ npx cypress run
 - Exercice a completer: [cypress/e2e/exercice/05-login-saucedemo.feature](cypress/e2e/exercice/05-login-saucedemo.feature)
 - Correction complete: [cypress/e2e/correction/05-login-saucedemo.feature](cypress/e2e/correction/05-login-saucedemo.feature)
 - Step definitions de correction: [cypress/support/step_definitions/05-login-saucedemo.correction.js](cypress/support/step_definitions/05-login-saucedemo.correction.js)
+
+### API debutant (.cy.js)
+
+- Exercice a completer: [cypress/api/exercice/01-api-simple.cy.js](cypress/api/exercice/01-api-simple.cy.js)
+- Correction complete: [cypress/api/correction/01-api-simple.cy.js](cypress/api/correction/01-api-simple.cy.js)
 
