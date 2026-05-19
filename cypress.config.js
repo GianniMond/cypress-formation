@@ -11,6 +11,7 @@ module.exports = defineConfig({
       "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
       "cypress/api/**/*.cy.{js,jsx,ts,tsx}",
       "cypress/e2e/**/*.feature",
+      "cypress/integration/features/**/*.feature",
     ],
     async setupNodeEvents(on, config) {
       await addCucumberPreprocessorPlugin(on, config);

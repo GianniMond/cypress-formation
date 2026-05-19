@@ -18,6 +18,14 @@
     "url": "https://github.com/GianniMond/cypress-formation/issues"
   },
   "homepage": "https://github.com/GianniMond/cypress-formation#readme",
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "[integration-directory]/[filepath]/**/*.{js,mjs,ts,tsx}",
+      "[integration-directory]/[filepath].{js,mjs,ts,tsx}",
+      "cypress/support/step_definitions/**/*.{js,mjs,ts,tsx}",
+      "cypress/integration/features/**/*.{js,mjs,ts,tsx}"
+    ]
+  },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^24.0.1",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
