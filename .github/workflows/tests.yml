@@ -2,6 +2,15 @@ name: Run Cypress Tests
 
 on:
   workflow_dispatch:
+    inputs:
+      scope:
+        description: 'Tests a executer'
+        required: false
+        default: 'integration'
+        type: choice
+        options:
+          - integration
+          - all
 
 jobs:
   cypress:
@@ -19,5 +28,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Cypress tests
+      - name: Run all Cypress tests
+        if: ${{ github.event.inputs.scope == 'all' }}
         run: npx cypress run
+
+      - name: Run integration feature tests only
+        if: ${{ github.event.inputs.scope == 'integration' }}
+        run: npx cypress run --spec 'cypress/integration/features/**/*.feature'
